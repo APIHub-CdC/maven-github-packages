@@ -12,19 +12,28 @@ A continuación, se muestra el proceso de configuración para instalar los paque
 
  1. Iniciar sesión con su cuenta de GitHub.
 
- 2. En la esquina superior derecha de cualquier página, haz clic en tu foto de perfil y luego en Configuración.
+ 2. En la esquina superior derecha de cualquier página, haz clic en tu foto de perfil y luego en **Settings**.
     <p align="center">
         <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/01_Settings.png" width="268">
     </p>
  
- 3. En la barra lateral izquierda, haz clic en Configuración del desarrollador
+ 3. En la barra lateral izquierda, haz clic en **Developer settings**.
+ 
     <p align="center">
         <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/02_Developer_Settings.png" width="268">
     </p>
     
+## Generar token de acceso personal
 
+ 1. Iniciar sesión con su cuenta de GitHub.
 
-### Instalar el paquete de los repositorios
+**Opcional**: Si desea cifrar su contenedor, coloque una contraseña en una variable de ambiente.
+
+```shell
+export KEY_PASSWORD=your_super_secure_password
+```
+
+## Instalar el paquete de los repositorios
 
 Teniendo las configuraciones anteriores ya solo falta instalar los paquetes (dependencias), con el siguiente comando:
 
