@@ -13,17 +13,30 @@ A continuación, se muestra el proceso de configuración para instalar los paque
  1. Iniciar sesión con su cuenta de GitHub.
 
  2. En la esquina superior derecha de cualquier página, haz clic en tu foto de perfil y luego en **Settings**.
+ 
     <p align="center">
-        <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/01_Settings.png" width="268">
+        <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/01_Settings.png" width="150">
     </p>
  
  3. En la barra lateral izquierda, haz clic en **Developer settings**.
  
     <p align="center">
-        <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/02_Developer_Settings.png" width="268">
+        <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/02_Developer_Settings.png" width="200">
     </p>
     
-## Generar token de acceso personal
+ 4. En la barra lateral izquierda, haz clic en **Personal access tokens**.
+ 
+    <p align="center">
+        <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/03_Personal_Access_Tokens.png" width="200">
+    </p>
+
+ 5. En la barra lateral izquierda, haz clic en **Personal access tokens**.
+
+    <p align="center">
+        <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/03_Personal_Access_Tokens.png" width="268">
+    </p>
+
+## Agregar las credenciales de acceso
 
  1. Iniciar sesión con su cuenta de GitHub.
 
@@ -32,12 +45,14 @@ A continuación, se muestra el proceso de configuración para instalar los paque
 ```shell
 export KEY_PASSWORD=your_super_secure_password
 ```
+2. Agregar las credenciales de acceso al archivo **settingsAPIHUB.xml**
+
 
 ## Instalar el paquete de los repositorios
 
 Teniendo las configuraciones anteriores ya solo falta instalar los paquetes (dependencias), con el siguiente comando:
 
-> **NOTA:** La configuracion del archivo settingsAPIHUB.xml, puede ser integrada en el **settings.xml** del **.m2**, si esto se realiza, quitar el comando *--settings settingsAPIHUB.xml* se la siguiente instrucción
+> **NOTA:** La configuracion del archivo **settingsAPIHUB.xml**, puede ser integrada en el **settings.xml** del **.m2**, si esto se realiza, quitar el comando *--settings settingsAPIHUB.xml* se la siguiente instrucción
 
 ```shell
 mvn --settings settingsAPIHUB.xml clean install -Dmaven.test.skip=true
