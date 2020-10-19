@@ -57,15 +57,29 @@ A continuación, se muestra el proceso de configuración para instalar los paque
 
 ## Agregar las credenciales de acceso
 
+Agrega tu usuario (no contraseña) y el token generado. Existen dos formas:
+
  1. Iniciar sesión con su cuenta de GitHub.
 
-**Opcional**: Si desea cifrar su contenedor, coloque una contraseña en una variable de ambiente.
+**Opción 1**: Coloque sus credenciales en variables de ambiente:
 
 ```shell
-export KEY_PASSWORD=your_super_secure_password
+export GITHUB_TOKEN='your_token'
+export GITHUB_ACTOR='your_github_usuarname'
 ```
-2. Agregar las credenciales de acceso al archivo **settingsAPIHUB.xml**
+**Opción 1**: Coloque sus credenciales en directamente en todas las etiquetas de **username** y **password** del archivo **settingsAPIHUB.xml**:
 
+```shell
+<settings>
+  ...
+  <servers>
+    <server>
+      <id>project-client-java</id>
+      <username>your_github_usuarname</username>
+      <password>your_token</password>
+    </server> 
+</settings>
+```
 
 ## Instalar el paquete de los repositorios
 
