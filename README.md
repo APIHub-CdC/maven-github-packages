@@ -59,8 +59,6 @@ A continuación, se muestra el proceso de configuración para instalar los paque
 
 Agrega tu usuario (no contraseña) y el token generado. Existen dos formas:
 
- 1. Iniciar sesión con su cuenta de GitHub.
-
 **Opción 1**: Coloque sus credenciales en variables de ambiente:
 
 ```shell
