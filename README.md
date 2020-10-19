@@ -81,12 +81,3 @@ export GITHUB_ACTOR='your_github_usuarname'
 </settings>
 ```
 
-## Instalar el paquete de los repositorios
-
-Teniendo las configuraciones anteriores ya solo falta instalar los paquetes (dependencias), con el siguiente comando:
-
-> **NOTA:** La configuracion del archivo **settingsAPIHUB.xml**, puede ser integrada en el **settings.xml** del **.m2**, si esto se realiza, quitar el comando *--settings settingsAPIHUB.xml* de la siguiente instrucción
-
-```shell
-mvn --settings settingsAPIHUB.xml clean install -Dmaven.test.skip=true
-```
