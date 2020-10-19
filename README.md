@@ -1,6 +1,6 @@
 # maven-github-packages
 
-A continuación, se muestra el proceso de configuración para instalar los paquetes (dependencias maven) de Api HUB.
+A continuación, se muestra el proceso de configuración para instalar los paquetes (dependencias maven) de API HUB.
 
 ## Requisitos
 
