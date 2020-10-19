@@ -33,7 +33,7 @@ A continuación, se muestra el proceso de configuración para instalar los paque
  6. Haz clic en **Generate new token**.
 
     <p align="center">
-        <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/04_Generate_New_token.png" width="550">
+        <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/04_Generate_New_token.png" width="510">
     </p>
     
  7. Dale a tu token un nombre descriptivo y seleccione los ámbitos o permisos que le gustaría otorgar a este token. Para usar su token para acceder a los repositorios desde la línea de comando, seleccione **repo** y **write:packages**.
@@ -51,7 +51,7 @@ A continuación, se muestra el proceso de configuración para instalar los paque
  9. Copia el token a su portapapeles. Por razones de seguridad, después de salir de la página, no podrá volver a ver el token..
 
     <p align="center">
-        <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/07_Copy_token.png" width="450">
+        <img src="https://github.com/APIHub-CdC/imagenes-cdc/blob/master/maven/07_Copy_token.png" width="480">
     </p>
  
 
